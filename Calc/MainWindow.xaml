@@ -1,0 +1,47 @@
+﻿<Window x:Class="Calc.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calc"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="400">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Viewbox Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" HorizontalAlignment="Right">
+            <TextBlock x:Name="resultDisplay" Margin="0,0,5,0" Text="0"></TextBlock>
+        </Viewbox>
+        <Button x:Name="buttonAC" Grid.Row="1" Grid.Column="0" Content="AC" FontSize="30" Click="buttonAC_Click"></Button>
+        <Button x:Name="buttonSign" Grid.Row="1" Grid.Column="1" Content="+/-" FontSize="30" Click="buttonSign_Click"></Button>
+        <Button x:Name="buttonMod" Grid.Row="1" Grid.Column="2" Content="%" FontSize="30" Click="ops_Click"></Button>
+        <Button x:Name="buttonDiv" Grid.Row="1" Grid.Column="3" Content="÷" FontSize="30" Click="ops_Click"></Button>
+        <Button x:Name="button7" Grid.Row="2" Grid.Column="0" Content="7" FontSize="30" Click="numbutton_Click"></Button>
+        <Button x:Name="button8" Grid.Row="2" Grid.Column="1" Content="8" FontSize="30" Click="numbutton_Click"></Button>
+        <Button x:Name="button9" Grid.Row="2" Grid.Column="2" Content="9" FontSize="30" Click="numbutton_Click"></Button>
+        <Button x:Name="buttonTimes" Grid.Row="2" Grid.Column="3" Content="×" FontSize="30" Click="ops_Click"></Button>
+        <Button x:Name="button4" Grid.Row="3" Grid.Column="0" Content="4" FontSize="30" Click="numbutton_Click"></Button>
+        <Button x:Name="button5" Grid.Row="3" Grid.Column="1" Content="5" FontSize="30" Click="numbutton_Click"></Button>
+        <Button x:Name="button6" Grid.Row="3" Grid.Column="2" Content="6" FontSize="30" Click="numbutton_Click"></Button>
+        <Button x:Name="buttonMinus" Grid.Row="3" Grid.Column="3" Content="-" FontSize="30" Click="ops_Click"></Button>
+        <Button x:Name="button1" Grid.Row="4" Grid.Column="0" Content="1" FontSize="30" Click="numbutton_Click"></Button>
+        <Button x:Name="button2" Grid.Row="4" Grid.Column="1" Content="2" FontSize="30" Click="numbutton_Click"></Button>
+        <Button x:Name="button3" Grid.Row="4" Grid.Column="2" Content="3" FontSize="30" Click="numbutton_Click"></Button>
+        <Button x:Name="buttonPlus" Grid.Row="4" Grid.Column="3" Grid.RowSpan="2" Content="+" FontSize="30" Click="ops_Click"></Button>
+        <Button x:Name="button0" Grid.Row="5" Grid.Column="0" Content="0" FontSize="30" Click="numbutton_Click"></Button>
+        <Button x:Name="buttonPoint" Grid.Row="5" Grid.Column="1" Content="." FontSize="30" Click="numbutton_Click"></Button>
+        <Button x:Name="buttonEqual" Grid.Row="5" Grid.Column="2" Content="=" FontSize="30" Click="ops_Click"></Button>
+    </Grid>
+</Window>
